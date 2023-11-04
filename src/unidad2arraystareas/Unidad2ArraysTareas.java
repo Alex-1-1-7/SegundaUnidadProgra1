@@ -36,7 +36,7 @@ public class Unidad2ArraysTareas {
         for (int j = 0; j<numeros[i];j++){
         //si yo ingreso el numero 4 por ejemplo, este bloque de codigo tendra 
         //4 iteraciones, por lo canto se acumularan 4 X
-        letra += "x";
+        letra += "x ";
         }
     System.out.println(letra);
     }    

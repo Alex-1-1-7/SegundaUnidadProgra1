@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class EncontrarPosicion {
     public static void main(String [] args){
         Scanner entrada = new Scanner(System.in);
-        int longitud,numero;
+        int longitud,numero,contador=0;
         System.out.print("Ingrese la longitud del vector: ");
         longitud = entrada.nextInt();
         while (longitud<=0){
@@ -20,7 +20,7 @@ public class EncontrarPosicion {
         
         System.out.println("Ingrese los valores al arreglo");
         for (int i=0;i<numeros.length;i++){
-            System.out.print((i+1)+". Ingrese un numero:");
+            System.out.print("Ingrese un numero en la posicion: "+(i+1)+": ");
             numeros [i] = entrada.nextInt();
         }
         boolean seEncuentra = true;
@@ -28,13 +28,17 @@ public class EncontrarPosicion {
         numero = entrada.nextInt();
         for (int i = 0;i<numeros.length;i++){
             if (numeros[i]==numero){
-                System.out.print("El numero: "+numero+" esta en la posicion: "+(i+1));
+                System.out.println("El numero: "+numero+" esta en la posicion: "+(i+1));
                 seEncuentra = false;
-                break;
+                contador++;
+                //break;
             }
         }
         if (seEncuentra){
-            System.out.print("El numero: "+numero+" no se encuentra en el arreglo. ");
+            System.out.println("El numero: "+numero+" no se encuentra en el arreglo. ");
         }
+        System.out.println("El numero: "+numero+" esta "+contador+" veces");
+        
+        
     }
 }
