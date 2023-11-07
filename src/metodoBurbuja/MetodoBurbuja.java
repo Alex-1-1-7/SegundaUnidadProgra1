@@ -40,6 +40,50 @@ public class MetodoBurbuja {
         for (int i = (numeros.length-1); i >=0; i--){
             System.out.println(numeros[i]);
         }
+        
+        
+        /*Scanner entrada = new Scanner(System.in);
+        int longitud;
+        longitud = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud del vector (entre 1 y 10)"));
+        while (longitud <= 0 || longitud > 10){
+            longitud = Integer.parseInt(JOptionPane.showInputDialog("ERROR. Ingrese la longitud del vector (entre 1 y 10)"));
+        }
+        int [] vector = new int [longitud];
+        System.out.println("Llene el vector de manera desordenada");
+        for (int i = 0; i < vector.length; i++){
+            System.out.print("Ingrese un numero enla posicion "+(i+1)+" : ");
+            vector[i] = entrada.nextInt();
+        }
+        // metodo burbuja 4,3
+        int aux;
+        for (int i = 0; i < vector.length-1; i++){
+            for (int j = 0; j < vector.length-1; j++){
+                if (vector[j]>vector[j+1]){
+                    aux = vector[j];
+                    vector[j] = vector[j+1];
+                    vector[j+1] = aux;
+                }
+            }
+        }
+        System.out.println("El arreglo ahora ordenado es (creciente): ");
+        for (int i = 0; i < vector.length; i++){
+            System.out.println(vector[i]);
+        }
+        // por si lo piden decreciente
+        int auxi;
+        for (int i = 0; i < vector.length-1; i++){
+            for (int j = 0; j < vector.length-1; j++){
+                if (vector[j]<vector[j+1]){
+                    auxi = vector[j];
+                    vector[j] = vector[j+1];
+                    vector[j+1] = auxi;
+                }
+            }
+        }
+        System.out.println("El vector ahora es (decreciente) :");
+        for (int i = 0; i < vector.length; i++){
+            System.out.println(vector[i]);
+        }*/
     }
     
 }
