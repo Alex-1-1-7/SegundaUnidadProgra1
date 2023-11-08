@@ -59,9 +59,9 @@ public class NumeroEnEspecifico {
             posicion = entrada.nextInt();
         }
         // mostrar el numero solicitado
-        for (int i = 0; i < vector.length; i++){
-            numero = vector[posicion-1];
-        }
+        //for (int i = 0; i < vector.length; i++){
+        numero = vector[posicion-1];
+        //}
         System.out.println("El numero solicitado es: "+numero);
         
         // ver cuentos digitos tiene numero
